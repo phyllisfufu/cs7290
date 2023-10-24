@@ -7,7 +7,54 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
 
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
         iframe {
+            width: 100%;
+            height: 600px;
             border: none;
         }
     </style>
@@ -15,12 +62,10 @@
 
 <body>
     
-    <!-- Header Section -->
     <header>
         <h1>Story: PMA Energy Consumption</h1>
     </header>
 
-    <!-- Introduction -->
     <section>
         <h2>Introduction</h2>
         <p>
@@ -28,7 +73,6 @@
         </p>
     </section>
 
-    <!-- Key Observations -->
     <section>
         <h2>Key Observations</h2>
         <ol>
@@ -50,7 +94,6 @@
         </ol>
     </section>
 
-    <!-- Data Visualization -->
     <section>
         <h2>Data Visualization</h2>
         <p>
@@ -58,8 +101,7 @@
         </p>
     </section>
 
-    <!-- Embedded Interactive Data Visualization -->
-    <iframe width="100%" height="2547" frameborder="0" src="https://observablehq.com/embed/1f9b2f46943bc5d5@684?cells=viewof+groupbyYear%2Cgraph1%2Cviewof+groupbytype%2Cgraph2%2Cviewof+groupbybuilding%2Cgraph3%2Cviewof+groupbyBuilding%2Cviewof+selectedYear%2Cgraph4%2Cviewof+groupbyType%2Cviewof+selectedYear2%2Cgraph5"></iframe>
+    <iframe frameborder="0" src="https://observablehq.com/embed/1f9b2f46943bc5d5@684?cells=viewof+groupbyYear%2Cgraph1%2Cviewof+groupbytype%2Cgraph2%2Cviewof+groupbybuilding%2Cgraph3%2Cviewof+groupbyBuilding%2Cviewof+selectedYear%2Cgraph4%2Cviewof+groupbyType%2Cviewof+selectedYear2%2Cgraph5"></iframe>
 
 </body>
 
