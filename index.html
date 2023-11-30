@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Energy Usage Analysis</title>
+    <title>Energy Usage and Cost Analysis</title>
     <style>
-        /* Add any CSS styles here */
+        /* Add CSS styles here */
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
@@ -16,42 +16,38 @@
         iframe {
             width: 100%;
             border: none;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
+    <!-- Section 2.1 -->
     <div class="section">
-        <h2>1 Explore Energy Usage</h2>
-        <p>Analysis of Energy Consumption Trends by Building</p>
-        <p>Charles Shipman Payson Building identified as the main contributor to energy usage.</p>
-        <p>Notable downward trend in energy consumption since 2020 for the Charles Shipman Payson Building.</p>
-        <p>Types of Energy Contributing to Usage Decrease</p>
-        <p>Electric grid and fuel oil showed a decline in 2021 and 2022 compared to 2020.</p>
-        <p>Natural gas usage increased in 2021 but decreased in 2022 compared to 2020.</p>
+        <h2>2.1 Explore Energy Usage</h2>
+        <p>Analyzing energy consumption trends grouped by building reveals that the Charles Shipman Payson Building is the dominant contributor to energy usage. Regarding the Charles Shipman Payson Building, it's noteworthy that a downward trend has been evident since 2020</p>
+        <iframe src="https://observablehq.com/embed/c73984de6db59757?cells=overall" height="611"></iframe>
+
+        <p>Since Charles Shipman Payson Building is the predominant building in usage, my next focus will be on understanding the types of energy contributing to the overall decrease in usage. The graph below illustrates that both the electric grid and fuel oil experienced a decline in 2021 and 2022 relative to 2020. Conversely, natural gas usage saw an increase in 2021 compared to 2020, but it also showed a decrease in 2022 when compared to 2020.</p>
+        <iframe src="https://observablehq.com/embed/c73984de6db59757?cells=viewof+groupbybuilding4%2Cviewof+groupbytype4%2Coverall2" height="626"></iframe>
     </div>
 
+    <!-- Section 2.2 -->
     <div class="section">
-        <h2>2 Explore Overall Energy Usage Cost</h2>
-        <p>Comparison of Overall Costs with Energy Consumption Trend</p>
-        <p>Despite reduced energy usage since 2020, overall costs increased in 2021 and 2022.</p>
-        <p>Identifying Energy Types Responsible for Cost Increase</p>
-        <p>Electric type: Decrease in 2021, but a significant increase in 2022.</p>
-        <p>Natural gas: Continuous cost increase in both 2021 and 2022.</p>
-        <p>Fuel oil: Similar trend of rising costs over the past two years.</p>
+        <h2>2.2 Explore Overall Energy Usage Cost</h2>
+        <p>My next inquiry is whether the overall costs have decreased in comparison to 2020, similar to the trend observed in energy consumption. The answer, however, is negative. Despite a reduction in overall energy usage since 2020, the total costs actually increased in both 2021 and 2022 compared to 2020.</p>
+        <iframe src="https://observablehq.com/embed/c73984de6db59757?cells=overall3" height="611"></iframe>
+
+        <p>My next question is: which type of energy usage is responsible for this rise in costs? Examining the electric type, we observe a decrease in 2021, followed by a significant increase in 2022 relative to 2020. In the case of natural gas, the costs increased in both 2021 and 2022 compared to 2020. This trend of rising costs over the past two years is also evident in the fuel oil type.</p>
+        <iframe src="https://observablehq.com/embed/c73984de6db59757?cells=viewof+groupbybuilding5%2Cviewof+groupbytype5%2Coverall4" height="627"></iframe>
     </div>
 
+    <!-- Section 2.3 -->
     <div class="section">
-        <h2>3 Reasons for Decline in Energy Usage vs. Increase in Costs</h2>
-        <p>Key Factor: The increase in unit cost attributed to inflation.</p>
+        <h2>2.3 Why has energy usage declined while the overall energy costs have risen compared to 2020?</h2>
+        <p>The answer lies in the unit cost - it's due to inflation?!</p>
+        <iframe src="https://observablehq.com/embed/c73984de6db59757?cells=viewof+groupbytype6%2Coverall5" height="568"></iframe>
     </div>
-
-    <!-- Iframes -->
-    <iframe src="https://observablehq.com/embed/c73984de6db59757?cells=overall" height="611"></iframe>
-    <iframe src="https://observablehq.com/embed/c73984de6db59757?cells=viewof+groupbybuilding4%2Cviewof+groupbytype4%2Coverall2" height="626"></iframe>
-    <iframe src="https://observablehq.com/embed/c73984de6db59757?cells=overall3" height="611"></iframe>
-    <iframe src="https://observablehq.com/embed/c73984de6db59757?cells=viewof+groupbybuilding5%2Cviewof+groupbytype5%2Coverall4" height="627"></iframe>
-    <iframe src="https://observablehq.com/embed/c73984de6db59757?cells=viewof+groupbytype6%2Coverall5" height="568"></iframe>
 
 </body>
 </html>
